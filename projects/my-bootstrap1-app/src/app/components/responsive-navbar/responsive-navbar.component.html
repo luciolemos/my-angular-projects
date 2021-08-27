@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li> -->
+        <li><a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">HOME</a></li>
+        <li><a class="nav-link" [routerLink]="['/about']" routerLinkActive="router-link-active">ABOUT</a></li>
+        <li><a class="nav-link" [routerLink]="['/products']" routerLinkActive="router-link-active">PRODUCTS</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">SERVICES</a>
+          <ul class="dropdown-menu bg-light border-light" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['/']" routerLinkActive="router-link-active">ACTION</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/']" routerLinkActive="router-link-active">ANOTHER ACTION</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link" [routerLink]="['/users']" routerLinkActive="router-link-active">USERS</a></li>
+        <li><a class="nav-link" [routerLink]="['/']" routerLinkActive="router-link-active">CONTACT</a></li>
+        <li><a class="nav-link" [routerLink]="['/checkout']" routerLinkActive="router-link-active">CHECKOUT</a></li>
+        <li><a class="nav-link" [routerLink]="['/empty']" routerLinkActive="router-link-active">EMPTY</a></li>
+        <li class="nav-item"><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">DISABLE</a></li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" />
+        <button class="btn btn-primary" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>

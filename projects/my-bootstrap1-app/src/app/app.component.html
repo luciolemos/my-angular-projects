@@ -1,0 +1,38 @@
+<!-- Responsive navbar-->
+<app-responsive-navbar></app-responsive-navbar>
+<main class="page landing-page">
+  <!-- Jumbotron -->
+  <app-jumbotron></app-jumbotron>
+  <!-- Bdges -->
+  <app-badge></app-badge>
+  <!-- Page content-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <!-- Post content-->
+        <router-outlet></router-outlet>
+      </div>
+
+      <!-- Side widgets-->
+      <div class="col-lg-4">
+        <!-- get-started-with-bootstrap -->
+        <app-get-started-with-bootstrap></app-get-started-with-bootstrap>
+
+        <!-- Search widget-->
+        <app-search-widget></app-search-widget>
+
+        <!-- Categories widget-->
+        <app-categories-widget></app-categories-widget>
+
+        <!-- Side widget-->
+        <app-side-widget></app-side-widget>
+
+        <!-- Acordion -->
+        <app-accordion></app-accordion>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- Footer-->
+<app-footer></app-footer>
